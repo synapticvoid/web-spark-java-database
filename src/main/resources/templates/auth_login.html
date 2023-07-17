@@ -1,0 +1,22 @@
+#parse("base.html")
+#@mainLayout()
+<div class="container-fluid d-flex h-100 characterBackground">
+    <form action="/login" method="post">
+        <div class="mb-3">
+            <label for="email" class="form-label text-muted small text-uppercase">Email or Phone
+                number</label>
+            <input type="email" class="form-control" id="email" name="email"/>
+        </div>
+
+        <div class="mb-3">
+            <label for="password" class="form-label text-muted small text-uppercase">Password</label>
+            <input type="password" class="form-control" id="password" name="password"/>
+        </div>
+
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary btn-lg btn-block w-100">Login</button>
+        </div>
+    </form>
+</div>
+
+#end
